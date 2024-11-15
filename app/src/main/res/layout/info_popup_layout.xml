@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="15dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    app:cardCornerRadius="15dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,104 +16,104 @@
             android:id="@+id/closePopupBtn"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:textSize="20sp"
-            android:text="⨉"
-            android:textStyle="bold"
-            android:textColor="@color/black"
             android:layout_gravity="end"
-            android:padding="0dp"
             android:layout_margin="0dp"
-            android:backgroundTint="@color/white" />
+            android:backgroundTint="@color/white"
+            android:padding="0dp"
+            android:text="⨉"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewKeyInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/key_info"
             android:textSize="20sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewPM10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/pm10_text"
             android:textSize="16sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewPM2_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/pm2_5_text"
             android:textSize="16sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewSO2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/so2_text"
             android:textSize="16sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewNO2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/no2_text"
             android:textSize="16sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewO3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/o3_text"
             android:textSize="16sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewCO"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/co_text"
             android:textSize="16sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewNH3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/nh3_text"
             android:textSize="16sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewNO"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
             android:text="@string/no_text"
             android:textSize="16sp"
-            android:paddingBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewIndexLevels"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
             android:text="@string/index_levels"
             android:textSize="20sp"
-            android:paddingBottom="5dp"
-            android:paddingTop="10dp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -125,16 +124,16 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/red_circle"
-                android:layout_marginEnd="8dp" />
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/red_circle" />
 
             <TextView
                 android:id="@+id/textViewVeryHigh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
                 android:text="@string/very_high"
                 android:textSize="16sp"
-                android:paddingBottom="5dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -146,16 +145,16 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/orange_circle"
-                android:layout_marginEnd="8dp" />
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/orange_circle" />
 
             <TextView
                 android:id="@+id/textViewHigh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
                 android:text="@string/high"
                 android:textSize="16sp"
-                android:paddingBottom="5dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -167,16 +166,16 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/yellow_circle"
-                android:layout_marginEnd="8dp" />
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/yellow_circle" />
 
             <TextView
                 android:id="@+id/textViewMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
                 android:text="@string/medium"
                 android:textSize="16sp"
-                android:paddingBottom="5dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -188,16 +187,16 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/light_green_circle"
-                android:layout_marginEnd="8dp" />
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/light_green_circle" />
 
             <TextView
                 android:id="@+id/textViewLow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
                 android:text="@string/low"
                 android:textSize="16sp"
-                android:paddingBottom="5dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -209,16 +208,16 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/green_circle"
-                android:layout_marginEnd="8dp" />
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/green_circle" />
 
             <TextView
                 android:id="@+id/textViewVeryLow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
                 android:text="@string/very_low"
                 android:textSize="16sp"
-                android:paddingBottom="5dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
