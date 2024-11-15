@@ -63,6 +63,7 @@ import com.mapbox.maps.viewannotation.ViewAnnotationManager;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import java.text.DecimalFormat;
 
 import java.text.SimpleDateFormat;
@@ -320,13 +321,16 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onStatusChanged(String provider, int status, Bundle extras) {}
+                    public void onStatusChanged(String provider, int status, Bundle extras) {
+                    }
 
                     @Override
-                    public void onProviderEnabled(@NonNull String provider) {}
+                    public void onProviderEnabled(@NonNull String provider) {
+                    }
 
                     @Override
-                    public void onProviderDisabled(@NonNull String provider) {}
+                    public void onProviderDisabled(@NonNull String provider) {
+                    }
                 });
             }
         } catch (SecurityException e) {
@@ -372,7 +376,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, "Latitude: " + latitude + "\n" + "Longitude: " + longitude, Toast.LENGTH_SHORT).show();
     }
 
-    private void getLocationLatLng(String location){
+    private void getLocationLatLng(String location) {
         String apiKey = "pk.eyJ1IjoiZmVyZGVrIiwiYSI6ImNtM2c4aGRobTAxdWwycnNhaG9xajQ2c24ifQ.-QJgFtrEf7z6iorAU_KJjQ";
         String apiUrl = "https://api.mapbox.com/search/geocode/v6/forward?q=" + location + "&access_token=" + apiKey;
 //        Log.e("String", apiUrl);
@@ -548,7 +552,7 @@ public class MainActivity extends AppCompatActivity {
         return sdf.format(date);
     }
 
-    private void callAPI(double latitude, double longitude){
+    private void callAPI(double latitude, double longitude) {
         String apiKey = "f404bd5533b639ddc1bd855225cbffe5";
         String apiUrl = "https://api.openweathermap.org/data/2.5/air_pollution?lat=" + latitude + "&lon=" + longitude + "&appid=" + apiKey;
 //        Log.e("String", apiUrl);
