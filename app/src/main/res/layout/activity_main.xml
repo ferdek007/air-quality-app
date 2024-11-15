@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="40dp"
+        android:queryHint="City, Country" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mapbox.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/infoCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:visibility="gone"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/closeCardViewBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:text="⨉"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:backgroundTint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location: "
+                    android:textSize="18sp"
+                    android:paddingVertical="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLastUpdateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Updated: "
+                    android:textSize="12sp"
+                    android:paddingVertical="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPM10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="PM10"
+                    android:textSize="16sp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPM2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="PM2.5"
+                    android:textSize="16sp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSO2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="SO2"
+                    android:textSize="16sp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewNO2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="NO2"
+                    android:textSize="16sp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewO3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="O3"
+                    android:textSize="16sp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewCO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="CO"
+                    android:textSize="16sp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewNH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="NH3"
+                    android:textSize="16sp"
+                    android:paddingVertical="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewNO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="NO"
+                    android:textSize="16sp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/locateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginVertical="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/target" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/showInfoPopupBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginVertical="110dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/question_mark" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Air&#160;Quality&#160;App</string>
+    <string name="key_info">Key Info</string>
+    <string name="index_levels">Air quality index levels scale in Europe</string>
+    <string name="pm10_text">PM<sub>10</sub> – Particles less than 10 µm</string>
+    <string name="pm2_5_text">PM<sub>2.5</sub> – Particles less than 2.5 µm</string>
+    <string name="so2_text">SO<sub>2</sub> – Sulphur dioxide</string>
+    <string name="no2_text">NO<sub>2</sub> – Nitrogen dioxide</string>
+    <string name="o3_text">O<sub>3</sub> – Ozone</string>
+    <string name="co_text">CO – Carbon monoxide</string>
+    <string name="nh3_text">NH<sub>3</sub> – Ammonia</string>
+    <string name="no_text">NO – Nitrogen monoxide</string>
+    <string name="very_high">Very high (danger)</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="very_low">Very low (safe)</string>
+</resources>
